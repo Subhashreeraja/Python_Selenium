@@ -21,7 +21,7 @@ name = driver.find_element(By.NAME, "name")
 name.send_keys("Subhashree")
 
 email = driver.find_element(By.XPATH, "//input[@data-qa = 'signup-email']")
-email.send_keys("Subhashree36@gmail.com")
+email.send_keys("Subhashree@gmail.com")
 
 driver.find_element(By.XPATH, "//button[@data-qa='signup-button']").click()
 
