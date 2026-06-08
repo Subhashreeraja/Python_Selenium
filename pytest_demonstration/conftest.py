@@ -1,6 +1,5 @@
 import pytest
 from selenium import webdriver
-
 @pytest.fixture()
 def setup_and_teardown(request):
     driver = webdriver.Chrome()

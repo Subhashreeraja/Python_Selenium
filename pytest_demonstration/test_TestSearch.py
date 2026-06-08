@@ -14,9 +14,7 @@ class TestSearch:
     def test_invalid_product(self):
         self.driver.find_element(By.NAME, "search").send_keys("XYZ123")
         self.driver.find_element(By.XPATH, "//button[contains(@class,'btn-default')]").click()
-        message = self.driver.find_element(
-            By.XPATH, "//p[contains(text(),'There is no product')]"
-        ).text
+        message = self.driver.find_element( By.XPATH, "//p[contains(text(),'There is no product')]" ).text
         assert "no product" in message.lower()
 
 
