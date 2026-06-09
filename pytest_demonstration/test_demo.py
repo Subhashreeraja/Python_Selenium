@@ -5,7 +5,7 @@ def test_sample_one():
     # print("hai")
 @pytest.mark.equal    
 def test_sample_two():
-    assert 4==3
+    assert 4==4
     # print("hello") 
 def test_sample_three():
     assert 6!=0

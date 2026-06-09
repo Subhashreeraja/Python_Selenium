@@ -11,6 +11,7 @@ class TestLogin:
        self.driver.find_element(By.XPATH,"//input[@id='loginusername']").send_keys(username)
        self.driver.find_element(By.XPATH,"//input[@id='loginpassword']").send_keys(password)
        self.driver.find_element(By.XPATH,"//button[normalize-space()='Log in']").click()
+       
     def test_invalid_login(self):
        self.driver.find_element(By.XPATH,"//a[@id='login2']").click()
        username=read_config.get_config("Invalid Credentials","user")
