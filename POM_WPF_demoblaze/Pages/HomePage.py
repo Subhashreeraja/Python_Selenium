@@ -8,7 +8,7 @@ class HomePage:
         self.driver=driver
      
     def login(self,username,password):
-        wait = WebDriverWait(self.driver,10)   
+        wait = WebDriverWait(self.driver,20)   
         wait.until(EC.element_to_be_clickable((By.ID, "login2"))).click()
         wait.until(EC.visibility_of_element_located((By.ID, "loginusername"))).send_keys(username)
         wait.until(EC.visibility_of_element_located((By.ID, "loginpassword"))).send_keys(password)
@@ -22,7 +22,7 @@ class HomePage:
         return welcome_txt.text
   
     def choose_categories_product(self):
-        wait = WebDriverWait(self.driver,10)
+        wait = WebDriverWait(self.driver,20)
         wait.until(EC.visibility_of_element_located((By.XPATH,"//a[text()='Laptops']"))).click()
         wait.until(EC.visibility_of_element_located((By.XPATH,'//div[@class="card-block"]//descendant::a[text()="MacBook Pro"]'))).click()
         
