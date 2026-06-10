@@ -7,7 +7,7 @@ from Utilities import log_creator
 class TestLogin:
     
  def test_login(self):
-   log=log_creator.log_generator()
+   self.log=log_creator.log_generator()
    homepage = HomePage(self.driver)
    username=read_config.get_config("Login Credentials","username")
    password=read_config.get_config("Login Credentials","password")

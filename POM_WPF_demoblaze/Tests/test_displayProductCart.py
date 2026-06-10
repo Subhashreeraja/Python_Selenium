@@ -8,7 +8,7 @@ from Utilities import log_creator
 class TestDisplayProductCart:
     
  def test_displayProductCart(self):
-   log=log_creator.log_generator()
+   self.log=log_creator.log_generator()
    homepage = HomePage(self.driver)
    productpage = ProductPage(self.driver)
    homepage.choose_categories_product()
