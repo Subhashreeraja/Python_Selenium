@@ -14,6 +14,5 @@ class TestAddProduct:
    expected ="Product added"
    
    actual=productpage.click_add_to_cart_btn()
-   self.log.info(actual)
    assert actual == expected
    self.log.info("Assert handled successfully...")

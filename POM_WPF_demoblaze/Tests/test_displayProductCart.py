@@ -18,6 +18,5 @@ class TestDisplayProductCart:
    expected ="MacBook Pro"
    
    actual=cartpage.verify_product_added_in_the_cart()
-   self.log.info(actual)
    assert actual == expected
    self.log.info("Assert handled successfully...")

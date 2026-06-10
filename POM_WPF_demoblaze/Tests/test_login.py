@@ -14,7 +14,6 @@ class TestLogin:
    homepage.login(username,password)
    
    expected = f"Welcome {username}"
-   self.log.info(expected)
    actual= homepage.verify_welcome_msg()
    assert actual == expected
    self.log.info("Assert handled successfully...")
